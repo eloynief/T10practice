@@ -5,17 +5,20 @@ import java.util.Scanner;
 
 public class Utils {
 	
-	public static double readDouble () {
-		//parametro scanner
-		Scanner sc= new Scanner(System.in);
-		int este=0;
+	
+	
+	
+	
+	public static double readDouble (Scanner sc) {
+		
+		double este=0;
 		System.out.println("");
-		este=sc.nextInt();
 
 		//captura el error del resultado
 		try{
-			int c;
-			c = este;
+			
+			este=sc.nextDouble();
+			sc.nextLine();
 		} catch(InputMismatchException ime){
 			System.out.println("El valor introducido no es de tipo "+ "");
 		}
@@ -27,11 +30,19 @@ public class Utils {
 	}
 	
 	
-	public static int readInt() {
-		//parametro de tipo scanner
-		Scanner sc= new Scanner(System.in);
-		int num2=0;
+	public static int readInt(Scanner sc) {
 		
+		
+		int num2=0;
+
+		//captura el error del resultado
+		try{
+			
+			num2=sc.nextInt();
+			sc.nextLine();
+		} catch(InputMismatchException ime){
+			System.out.println("El valor introducido no es de tipo "+ "");
+		}
 		
 		
 		
