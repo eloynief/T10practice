@@ -1,4 +1,4 @@
-package ficheros;
+package ficheros.ejercicio1;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -14,9 +14,9 @@ public class Ej1 {
 //		
 		
 		try {
-			Scanner sc=new Scanner(new FileReader("C:\\Users\\enieves\\Pictures\\T10practice\\T10\\src\\ficheros\\NumerosReales"));//C:\Users\enieves\Pictures\T10practice\T10\src\ficheros\NumerosReales
+			Scanner sc=new Scanner(new FileReader("src\\ficheros\\ejercicio1\\NumerosReales"));//C:\Users\enieves\Pictures\T10practice\T10\src\ficheros\NumerosReales
 			
-			FileReader lector= new FileReader("C:\\Users\\enieves\\Pictures\\T10practice\\T10\\src\\ficheros\\NumerosReales");
+			FileReader lector= new FileReader("src\\ficheros\\ejercicio1\\NumerosReales");
 			
 			int numero = 0;
 			try {
@@ -35,7 +35,14 @@ public class Ej1 {
 		
 			System.out.println(numero);
 			
-			
+//			double suma=0,media=0;
+//			int contador=0;
+//			
+//			while (sc.hasNextInt()) {
+//				suma=sc.nextDouble();
+//				contador++;
+//			}
+				
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			System.err.println("mal jesho tontol culo");

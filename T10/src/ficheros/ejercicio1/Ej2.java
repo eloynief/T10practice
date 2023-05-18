@@ -1,4 +1,4 @@
-package ficheros;
+package ficheros.ejercicio1;
 
 public class Ej2 {
 
